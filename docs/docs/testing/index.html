@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US en-us" class="no-js"><!--<![endif]-->
+	
+<!-- Mirrored from dev.toopher.com/docs/testing by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+        <title>Testing - Toopher API Documentation - Toopher</title>
+
+        
+
+        <link rel="shortcut icon" href="../../site_media/static/dist/img/favicon/index.ico?v=2">
+
+        
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,800,700" rel="stylesheet" type="text/css">
+
+            <!-- sass compiled stylesheet -->
+            <link href="../../site_media/static/dist/stylesheets/styles.min/index.css" type="text/css" rel="stylesheet">
+
+            
+        
+
+        
+        	<script type="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26481705-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        
+    </head>
+
+    <body class="fixed-page" id="">
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-54MWG4"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54MWG4');</script>
+      <!-- End Google Tag Manager -->
+
+    	
+             <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-right scrollable">
+        <div>
+            <a href="#" id="close-right-nav" class="close-nav"><i class="icon icon-delete"></i></a>
+            <ul class="nav main-nav nav-stacked">
+            </ul>
+            <div class="nav-apps-section">
+                <h5>OUR APPS</h5>
+                <ul class="list-inline list-unstyled nav-app-list">
+                    <li><a href="https://itunes.apple.com/us/app/toopher/id562592093?mt=8&amp;uo=4" 
+       target="itunes_store"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="http://play.google.com/store/apps/details?id=com.toopher.android"><i class="fa fa-android"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+        <div id="content" class="snap-content" data-snap-ignore="true">
+        	
+    <header class="navbar toopher-docs-nav navbar-default navbar-docs navbar-static-top" role="banner">
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-xs-12">
+		        <a href="https://www.toopher.com/">
+		            <img class="toopher-nav-logo" src="../../site_media/static/img/sf-toopher-transparent/index.png" alt="Salesforce + Toopher" width="220" />
+		        </a>
+		        <nav class="navbar-right" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+</nav>
+		    </div>
+        </div>
+    </div>
+</header>
+
+
+        	
+                <noscript>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                <a class="close" data-dismiss="alert">&times;</a>
+                                Please enable JavaScript to experience all the sweet features we lovingly built for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </noscript>
+
+                
+  <div class="container-fluid content-frame">
+    <div class="row">
+
+        
+
+<div class="col-xs-3">
+    <div class="sidebar-menu-wrapper">
+        <nav class="sidebar-section sidebar-menu">
+            <h4 class="sidebar-menu-title">Documentation</h4>
+            <ul class="nav nav-stacked">
+                <li class=""><a href="../getting-started/index.html">Getting Started Guide</a></li>
+                <li class=""><a href="../api/pairing/index.html">Pairing</a></li>
+                <li class=""><a href="../api/authenticating/index.html">Authenticating</a></li>
+                <li class=""><a href="../demo-to-real-world/index.html">Demo to Real World</a></li>
+                <li class=""><a href="../api/account-recovery/index.html">Account Recovery</a></li>
+                <li class="active"><a href="index.html">Testing</a></li>
+                <li class=""><a href="../examples/index.html">Examples</a></li>
+                <li class=""><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="mailto:support@toopher.com">Contact Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+        <div class="col-xs-9 main-content" role="main">
+          <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1 class="page-title">Testing</h1>
+                    <p class="lead">So, you've implemented Toopher and you're about to take over the world. Not so fast! Below is a checklist of scenarios to test before you unleash the beast.</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="md-cell alt-cell">
+                      <h4>Can you pair?</h4>
+                      <p>Ensure <code>allow</code> and <code>deny</code> from the Toopher-enabled device yield proper results on the implementing service.</p>
+                    </div>
+
+                    <div class="md-cell">
+                      <h4>Does pairing time out?</h4>
+                      <p>If the user has not accepted the pairing after some time (say 90 seconds), we recommend you fail the pairing and offer the user the chance to try again.</p>
+                    </div>
+
+                    <div class="md-cell alt-cell">
+                      <h4>Can you unpair (effectively removing Toopher)?</h4>
+                      <p>This is the opposite of pairing and should simply flip the <code>is Toopher enabled?</code> bit. While we can't imagine anyone not wanting to use Toopher, it could happen.</p>
+                    </div>
+
+                    <div class="md-cell">
+                      <h4>Can you authenticate with and without Toopher enabled?</h4>
+                      <p>After pairing, subsequent logins should trigger calls to Toopher. Ensure <code>allow</code> and <code>deny</code> from the Toopher-enabled device yield proper results on the implementing service.</p>
+                    </div>
+
+                    <div class="md-cell alt-cell">
+                      <h4>Does authenticating time out?</h4>
+                      <p>If the user has not accepted the login after some time (say 90 seconds), we recommend you fail the authentication request and offer the user the chance to try again.</p>
+                    </div>
+
+                    <div class="md-cell">
+                      <h4>Can multiple people authenticate from the same computer?</h4>
+                      <p>Implementers generally tie a user to a terminal with a cookie; if you've done so, ensure that the cookies are not user-specific. A good test is to create two accounts. Log into the first account, then into the second. You should have to name the terminal for both accounts. Finally, log back in on the first user--you should not have to rename the terminal. One way to achieve this is to store a random string in the cookie then associate a user's terminal with the value of the cookie.</p>
+                    </div>
+
+                    <div class="md-cell alt-cell">
+                      <h4>Have you set up <code>terminal_name_extra</code> properly?</h4>
+                      <p>Open a browser and log in to the site. When prompted, name the computer--remember this phrase. When prompted by the Toopher app, allow automation. Now, open a new browser or incognito window and log in to the site. You should be prompted to name the computer, so repeat the exact same name from the other browser. If the second browser's logins are automated, you are vulnerable to terminal name guessing and you need to utilize <code>terminal_name_extra</code> when calling the <code>authenticate</code> method.</p>
+                    </div>
+
+                    <div class="md-cell">
+                      <h4>Can you recover your account if you are locked out of Toopher?</h4>
+                      <p>If a user loses their phone or removes their pairing (on the Toopher-enabled device), they will not be able to login with Toopher. It is important to provide a way for users to reset Toopher without access to Toopher--for example, an email similar to password reset emails.</p>
+                    </div>
+
+                    <div class="md-cell alt-cell">
+                      <h4>Do you block when waiting for user responses?</h4>
+                      <p>For site performance, you should poll for status changes (as opposed to blocking and waiting). Check this by authenticating in one browser/tab and navigating around the site from a second browser; if you're able to browse the site while an authentication is happening, you are not blocking. One way around this issue is to create two API endpoints, one to check the pairing status and one to check the authentication status. Then, use JavaScript (if this is a website) to poll the server until the request is complete or a timeout is reached.</p>
+                    </div>
+                  </div>
+                </div>
+            </div><!-- .col-xs-12 -->
+          </div><!-- .row -->
+      </div><!-- .col-xs-10 #main-content -->
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+
+
+
+            
+
+            
+    
+
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-links">
+            <div class="col-xs-12 col-md-4">
+                <a href="https://www.toopher.com/" class="toopher-footer-logo">
+                    <img src="../../site_media/static/img/sf-toopher-transparent/index.png" width="220" alt="Toopher" />
+                </a>
+                <p class="toopher-short-description">Toopher prevents online fraud using your mobile device to automatically verify you are where your identity is being used.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <p><small class="text-muted copyright">&copy; 2011 - 2014 Toopher Inc.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div><!-- .snap-content -->
+
+        
+        	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+            <script type="text/javascript" src="../../site_media/static/dist/js/lib/index.js"></script>
+        	<script type="text/javascript" src="../../site_media/static/dist/js/app/index.js"></script>
+
+        	
+        
+    </body>
+
+<!-- Mirrored from dev.toopher.com/docs/testing by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+</html>

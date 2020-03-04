@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US en-us" class="no-js"><!--<![endif]-->
+	
+<!-- Mirrored from dev.toopher.com/docs/demo-to-real-world by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+        <title>Getting Started - Toopher API Documentation - Toopher</title>
+
+        
+
+        <link rel="shortcut icon" href="../../site_media/static/dist/img/favicon/index.ico?v=2">
+
+        
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,800,700" rel="stylesheet" type="text/css">
+
+            <!-- sass compiled stylesheet -->
+            <link href="../../site_media/static/dist/stylesheets/styles.min/index.css" type="text/css" rel="stylesheet">
+
+            
+        
+
+        
+        	<script type="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26481705-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        
+    </head>
+
+    <body class="fixed-page" id="">
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-54MWG4"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54MWG4');</script>
+      <!-- End Google Tag Manager -->
+
+    	
+             <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-right scrollable">
+        <div>
+            <a href="#" id="close-right-nav" class="close-nav"><i class="icon icon-delete"></i></a>
+            <ul class="nav main-nav nav-stacked">
+            </ul>
+            <div class="nav-apps-section">
+                <h5>OUR APPS</h5>
+                <ul class="list-inline list-unstyled nav-app-list">
+                    <li><a href="https://itunes.apple.com/us/app/toopher/id562592093?mt=8&amp;uo=4" 
+       target="itunes_store"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="http://play.google.com/store/apps/details?id=com.toopher.android"><i class="fa fa-android"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+        <div id="content" class="snap-content" data-snap-ignore="true">
+        	
+    <header class="navbar toopher-docs-nav navbar-default navbar-docs navbar-static-top" role="banner">
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-xs-12">
+		        <a href="https://www.toopher.com/">
+		            <img class="toopher-nav-logo" src="../../site_media/static/img/sf-toopher-transparent/index.png" alt="Salesforce + Toopher" width="220" />
+		        </a>
+		        <nav class="navbar-right" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+</nav>
+		    </div>
+        </div>
+    </div>
+</header>
+
+
+        	
+                <noscript>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                <a class="close" data-dismiss="alert">&times;</a>
+                                Please enable JavaScript to experience all the sweet features we lovingly built for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </noscript>
+
+                
+<div class="container-fluid content-frame">
+  <div class="row">
+
+    
+
+<div class="col-xs-3">
+    <div class="sidebar-menu-wrapper">
+        <nav class="sidebar-section sidebar-menu">
+            <h4 class="sidebar-menu-title">Documentation</h4>
+            <ul class="nav nav-stacked">
+                <li class=""><a href="../getting-started/index.html">Getting Started Guide</a></li>
+                <li class=""><a href="../api/pairing/index.html">Pairing</a></li>
+                <li class=""><a href="../api/authenticating/index.html">Authenticating</a></li>
+                <li class="active"><a href="index.html">Demo to Real World</a></li>
+                <li class=""><a href="../api/account-recovery/index.html">Account Recovery</a></li>
+                <li class=""><a href="../testing/index.html">Testing</a></li>
+                <li class=""><a href="../examples/index.html">Examples</a></li>
+                <li class=""><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="mailto:support@toopher.com">Contact Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="col-xs-9 main-content" role="main">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="page-header">
+            <h1 class="page-title">From the Demo to a Real World Implementation</h1>
+            <p class="lead">Now that you understand the basics of the API, let's see it in action.</p>
+          </div>
+
+          <div class="section">
+            <h2>Walk through the basic functions with a demo</h2>
+            <p>
+              We package a demo with each of our language libraries. Our demo is meant to be simple and self-contained. As such, the demo contains all the necessary actions. Toopher revolves around pairing a device then authenticating actions with that device. Both actions are accomplished via our API. Let's walk through the demo to get familiar with the basic Toopher functions.
+            </p>
+
+            <p>
+              In practice, you will need to move the actions into their logical location on your server, which we discuss more in the next section.
+            </p>
+
+            <p>
+              We initiate our demo by simply running the script; for example, <code>python demo.py</code> for our <a href="https://github.com/toopher/toopher-python" title="Toopher Python API">Python library</a>.  The first you will do is input your key and secret. Your key and secret are unique and are provided to you when you create a requester. This creates an API object that can issue pairing and authentication requests.
+            </p>
+
+            <p>
+              With an API object set up, we move to pairing. Pairing requires a pairing phrase and username. In general, you can use the client's site username. Pairing ends whenever the user accepts the pairing on their phone.
+            </p>
+
+            <p>
+              After pairing, we can issue authentication requests for users. Authentication requests require a pairing id and a terminal name, with an optional action parameter. The standard action is "login", but you could enable Toopher on whatever action you desire. Authentication ends whenever the user accepts the action on their phone.
+            </p>
+
+            <p>
+              That's it! The Toopher Two Step simply pairs a user's phone with your service, then makes authentication requests that must be accepted on the user's phone.
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>From demo to real world</h2>
+            <p>
+              The demo provides an introduction to Toopher and our APIs furnish all necessary functionality. Enabling Toopher for your service should be straightforward, but there are several steps.
+            </p>
+
+            <h3>Steps to enable Toopher on your site</h3>
+            <ul>
+              <li>Determine if user is Toopher enabled</li>
+              <li>Allow user to pair</li>
+              <li>Authorize user logins</li>
+              <li>Allow user to reset Toopher</li>
+            </ul>
+
+            <p>
+              Easy enough, but what does that look like in my web application?
+            </p>
+
+            <h3>Example of how to enable Toopher on your site</h3>
+            <ul>
+              <li>Determine if user is Toopher enabled</li>
+              <ul>
+                <li>You will need to track if users have already paired with Toopher. We recommend augmenting the User object (or database table) with Toopher information, including <code>pairing_id</code>.</li>
+              </ul>
+              <li>Allow user to pair</li>
+              <ul>
+                <li>Create an user interface element for the pairing phrase</li>
+                <li>Create an API endpoint that initiates a user-phone pairing</li>
+                <li>Create an API endpoint that checks the status of a pairing request</li>
+                <li>Once the user has accepted the pairing request, update their account with the Toopher information</li>
+                <li>Create a visual indicator to tell the user what's happening; for example, "Pairing. Please accept the request from Toopher on your phone."</li>
+                <li>Rather than wait on the server-side, we recommend you use JavaScript to wait on the user. Note: Consider adding a timeout. We suggest two minutes.</li>
+              </ul>
+              <li>Allow the user to unpair</li>
+              <ul>
+                <li>Create a user interface element to remove Toopher from the account</li>
+                <li>Create an API endpoint that removes the user's Toopher pairing ID from their account</li>
+                <li>Link the interface element to your newly created unpair function</li>
+              </ul>
+              <li>Authorize user logins</li>
+              <ul>
+                <li>When a user initiates an authentication, check if they have a Toopher pairing ID; if they do, authenticate with Toopher.</li>
+                <li>Name the user's computer</li>
+                <li>Create a user interface element to accept the computer name</li>
+                <li>Create an API endpoint that stores the user's computer name</li>
+                <li>Create an API endpoint that initiates an authentication request</li>
+                <li>Create an API endpoint that checks the status of an authentication request</li>
+                <li>Timeout - Rather than wait on the server-side, we recommend you use JavaScript to wait on the user.</li>
+                <li>Visual indicator about what's happening</li>
+              </ul>
+              <li>Allow user to reset Toopher</li>
+              <ul>
+                <li>This is a vital step in account recovery. Resetting Toopher could be done by contacting your support center or in the same manner that a user would reset passwords.</li>
+              </ul>
+            </ul>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <section class="docs-where-next-container">
+                <h4>Next Up</h4>
+                <p>With a basic implementation in place, be sure to allow users to recover their account if, for example, they lost their mobile device.</p>
+                <p><a href="../api/account-recovery/index.html" class="btn btn-round btn-default btn-outline">Account Recovery &raquo;</a></p>
+              </section>
+            </div><!-- .col-xs-12 -->
+          </div><!-- .row -->
+        </div><!-- .col-xs-12 -->
+      </div><!-- .row -->
+    </div><!-- .col-xs-10 #main-content -->
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+
+
+
+            
+
+            
+    
+
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-links">
+            <div class="col-xs-12 col-md-4">
+                <a href="https://www.toopher.com/" class="toopher-footer-logo">
+                    <img src="../../site_media/static/img/sf-toopher-transparent/index.png" width="220" alt="Toopher" />
+                </a>
+                <p class="toopher-short-description">Toopher prevents online fraud using your mobile device to automatically verify you are where your identity is being used.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <p><small class="text-muted copyright">&copy; 2011 - 2014 Toopher Inc.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div><!-- .snap-content -->
+
+        
+        	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+            <script type="text/javascript" src="../../site_media/static/dist/js/lib/index.js"></script>
+        	<script type="text/javascript" src="../../site_media/static/dist/js/app/index.js"></script>
+
+        	
+        
+    </body>
+
+<!-- Mirrored from dev.toopher.com/docs/demo-to-real-world by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+</html>

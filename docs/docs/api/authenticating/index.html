@@ -1,0 +1,507 @@
+
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US en-us" class="no-js"><!--<![endif]-->
+	
+<!-- Mirrored from dev.toopher.com/docs/api/authenticating by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+        <title>Authenticating - Toopher API Documentation - Toopher</title>
+
+        
+
+        <link rel="shortcut icon" href="../../../site_media/static/dist/img/favicon/index.ico?v=2">
+
+        
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,800,700" rel="stylesheet" type="text/css">
+
+            <!-- sass compiled stylesheet -->
+            <link href="../../../site_media/static/dist/stylesheets/styles.min/index.css" type="text/css" rel="stylesheet">
+
+            
+        
+
+        
+        	<script type="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26481705-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        
+    </head>
+
+    <body class="fixed-page" id="">
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-54MWG4"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54MWG4');</script>
+      <!-- End Google Tag Manager -->
+
+    	
+             <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-right scrollable">
+        <div>
+            <a href="#" id="close-right-nav" class="close-nav"><i class="icon icon-delete"></i></a>
+            <ul class="nav main-nav nav-stacked">
+            </ul>
+            <div class="nav-apps-section">
+                <h5>OUR APPS</h5>
+                <ul class="list-inline list-unstyled nav-app-list">
+                    <li><a href="https://itunes.apple.com/us/app/toopher/id562592093?mt=8&amp;uo=4" 
+       target="itunes_store"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="http://play.google.com/store/apps/details?id=com.toopher.android"><i class="fa fa-android"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+        <div id="content" class="snap-content" data-snap-ignore="true">
+        	
+    <header class="navbar toopher-docs-nav navbar-default navbar-docs navbar-static-top" role="banner">
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-xs-12">
+		        <a href="https://www.toopher.com/">
+		            <img class="toopher-nav-logo" src="../../../site_media/static/img/sf-toopher-transparent/index.png" alt="Salesforce + Toopher" width="220" />
+		        </a>
+		        <nav class="navbar-right" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+</nav>
+		    </div>
+        </div>
+    </div>
+</header>
+
+
+        	
+                <noscript>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                <a class="close" data-dismiss="alert">&times;</a>
+                                Please enable JavaScript to experience all the sweet features we lovingly built for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </noscript>
+
+                
+  <div class="container-fluid content-frame">
+    <div class="row">
+
+      
+
+<div class="col-xs-3">
+    <div class="sidebar-menu-wrapper">
+        <nav class="sidebar-section sidebar-menu">
+            <h4 class="sidebar-menu-title">Documentation</h4>
+            <ul class="nav nav-stacked">
+                <li class=""><a href="../../getting-started/index.html">Getting Started Guide</a></li>
+                <li class=""><a href="../pairing/index.html">Pairing</a></li>
+                <li class="active"><a href="index.html">Authenticating</a></li>
+                <li class=""><a href="../../demo-to-real-world/index.html">Demo to Real World</a></li>
+                <li class=""><a href="../account-recovery/index.html">Account Recovery</a></li>
+                <li class=""><a href="../../testing/index.html">Testing</a></li>
+                <li class=""><a href="../../examples/index.html">Examples</a></li>
+                <li class=""><a href="../../faq/index.html">FAQ</a></li>
+                <li><a href="mailto:support@toopher.com">Contact Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+      <div class="col-xs-9 main-content" role="main">
+
+        <div class="page-header">
+          <h1 class="page-title">Authenticating</h1>
+          <p class="lead"><p>To authenticate the user you'll need the pairing id generated in <a href="../pairing/index.html">step 1</a> along with a unique human readable string identifying the terminal the user is using to make the authentication request.</p>
+        </div>
+
+        <hr>
+
+        <!-- ################################## -->
+        <!-- POST create authentication request -->
+        <!-- ################################## -->
+        <h3><span class="verb">POST</span> authentication_request/initiate</h3>
+        <p>Initiate an authentication request</p>
+        <h5>Resource URL</h5>
+        <p><code>https://api.toopher.com/v1/authentication_requests/initiate</code></p>
+
+        <h5>PARAMETERS</h5>
+        <table class="table docs-table">
+          <tr>
+            <td>
+              <strong>pairing_id</strong><br>
+              <small>required</small>
+            </td>
+            <td>
+              The unique string identifier id returned by a previous pairing request.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>terminal_name</strong><br>
+              <small>semi-required</small>
+            </td>
+            <td>
+              A human recognizable string which represents the terminal from which the user is making the request.  This is displayed to the user on the mobile app when authenticating.  If this is not included, then a terminal_id returned from a previous request must be provided (see below).  These should be unique values for each different device from which a user connects to your service (as best you can detect).
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>terminal_id</strong><br>
+              <small>semi-required</small>
+            </td>
+            <td>
+              The unique string identifier generated and returned by the Toopher web service for a given terminal from a previous request.  If this is not included, then a terminal_name is required (see above).  If both are provided, the terminal_name for the given terminal_id will be updated.  This allows Toopher to handle unique terminals independently of a terminal's name changing.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>action</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              A string describing the action being allowed or denied; for example, 'login'.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>format</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              Allows the response formatting to be specified.  Valid values are: xml, json, and yaml.  The default is json.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>terminal_name_extra</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              A string to help differentiate identically named terminals. It is strongly recommended that you use this parameter in addition to the terminal_name and that terminals with the same terminal_name have different terminal_name_extra values.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>challenge_required</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              Allows the requester to require that a user secure their Toopher app with a pattern lock. The user will be asked to input their pattern in order to authenticate. To enable, set this parameter to true. The default value is false.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>automation_allowed</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              Useful for disallowing automation. This may be useful for sensitive interactions that necessitate the user manually authenticating the request. To disable automation in safe locations, set this parameter to false. The default is true.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>otp</strong><br>
+              <small>optional</small>
+            </td>
+            <td>
+              The <a href="http://tools.ietf.org/html/rfc6238">IETF standard RFC6238 one-time-password</a>, unique to each pairing, generated in the Toopher mobile app when the user clicks on a pairing.  If submitted, the Toopher API will verify the OTP, and immediately return the authentication result (i.e. pending will be False, and granted will be True if the OTP is valid).  This feature allows for fallback authentication in case the user's mobile device does not have network access.
+            </td>
+          </tr>
+        </table>
+
+
+        <div class="code-gutter">
+          <h4>Authentication Code Examples</h4>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#python" data-toggle="tab">Python</a></li>
+            <li><a href="#java" data-toggle="tab">Java</a></li>
+            <li><a href="#dot-net" data-toggle="tab">.NET</a></li>
+            <li><a href="#php" data-toggle="tab">PHP</a></li>
+            <li><a href="#ruby" data-toggle="tab">Ruby</a></li>
+            <li><a href="#perl" data-toggle="tab">Perl</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="python">
+              <script src="https://gist.github.com/smholloway/e07377df7a6ac34b967b.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-python">Toopher Python API library on GitHub &raquo;</a></p>
+            </div>
+            <div class="tab-pane" id="java">
+              <script src="https://gist.github.com/smholloway/7296fe38caac1f1f0d99.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-java">Toopher Java API library on GitHub &raquo;</a></p>
+            </div>
+            <div class="tab-pane" id="ruby">
+              <script src="https://gist.github.com/smholloway/51000b635d6d6331b719.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-ruby">Toopher Ruby API library on GitHub &raquo;</a></p>
+            </div>
+            <div class="tab-pane" id="dot-net">
+              <script src="https://gist.github.com/smholloway/378443204a32cfa229b6.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-dotnet">Toopher DotNet API library on GitHub &raquo;</a></p>
+            </div>
+            <div class="tab-pane" id="php">
+              <script src="https://gist.github.com/smholloway/3ec23134be59d5bd9412.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-php">Toopher PHP API library on GitHub &raquo;</a></p>
+            </div>
+            <div class="tab-pane" id="perl">
+              <script src="https://gist.github.com/smholloway/5b59f7c18c84041161b7.js"></script>
+              <p class="pull-right"><a href="https://github.com/toopher/toopher-perl">Toopher Perl API library on GitHub &raquo;</a></p>
+            </div>
+          </div><!-- .tab-content -->
+        </div><!-- .code-gutter -->
+
+        <hr>
+
+        <h3>Response</h3>
+        <p>Upon success, a status object will be returned containing the following fields formatted as desired.</p>
+        <table class="table docs-table">
+          <tr>
+            <td><strong>id</strong></td>
+            <td>
+              A unique string identifier generated and returned by the Toopher web service that is used to identify this authentication request.  It can be used to request status information for the authentication request.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>pending</strong></td>
+            <td>
+              A boolean value indicating if the request is still pending.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>granted</strong></td>
+            <td>
+              A boolean value indicating if the request was granted..
+            </td>
+          </tr>
+          <tr>
+            <td><strong>automated</strong></td>
+            <td>
+              A boolean value indicating if the request was automated.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>reason</strong></td>
+            <td>
+              A string which provides additional information about the reason for the authentication outcome (if available).
+            </td>
+          </tr>
+          <tr>
+            <td><strong>terminal</strong></td>
+            <td>
+              A nested terminal object that will contain (among others) the following fields:
+              <ul>
+                <li>id: A unique string identifier generated and returned by the Toopher web service for a given terminal.</li>
+                <li>name: The human recognizable terminal name associated with the given id.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>action</strong></td>
+            <td>
+              A nested action object that will contain the following fields:
+              <ul>
+                <li>id: A unique string identifier generated and returned by the Toopher web service for a given action.</li>
+                <li>name: The description of what action the user is authorizing.</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <p>This request will return immediately to facilitate asynchronous operations.</p>
+
+        <div class="code-gutter">
+          <h4 id="auth_status_example_json">Authentication Response Example</h4>
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#json" data-toggle="tab">JSON</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="json">
+              <script src="https://gist.github.com/smholloway/4c223d2f3c2561d11b4c.js"></script>
+            </div>
+          </div><!-- .tab-content -->
+        </div><!-- .code-gutter -->
+
+        <hr>
+
+        <h3>Errors</h3>
+        <p>Errors are possible. Errors will have an HTTP status code of 400 or greater; each response should have a JSON object with an <code>error_code</code> and <code>error_message</code>.</p>
+
+        <table class="table docs-table">
+          <tr>
+            <td><strong>400 - Bad Request</strong></td>
+            <td>This is the base error, which may be raised for various reasons. Please see the internal <code>error_message</code> for additional details.</td>
+          </tr>
+          <tr>
+            <td><strong>401 - Unauthorized</strong></td>
+            <td>You may receive a 401 due to OAuth errors.</td>
+          </tr>
+          <tr>
+            <td><strong>403 - Forbidden</strong></td>
+            <td>You may receive a 403 when accessing a resource that does not belong to you, attempting to use a <code>Requester</code> that was deleted, using a feature that is not allowed by your current plan.</td>
+          </tr>
+          <tr>
+            <td><strong>404 - Not Found</strong></td>
+            <td>You may receive a 404 if an input item does not exist.</td>
+          </tr>
+          <tr>
+            <td><strong>409 - Conflict</strong></td>
+            <td>You may receive a 409 if the input user or their pairing or terminal cannot be found, if a user has opted out of Toopher via SMS or by deleting the pairing in the Toopher mobile app.</td>
+          </tr>
+          <tr>
+            <td><strong>429 - Too Many Requests</strong></td>
+            <td>You may receive a 429 if you exceed the rate limit for the input authentication request.</td>
+          </tr>
+        </table>
+
+        <hr>
+
+        <!-- ################################# -->
+        <!-- GET authentication request status -->
+        <!-- ################################# -->
+        <h4><span class="verb">GET</span> authentication_requests/{authentication_request_id}</h4>
+        <p>
+          Check the status of an authentication request
+        </p>
+        <h5>Resource URL</h5>
+        <p>
+          <code>https://api.toopher.com/v1/authentication_requests/{authentication_request_id}</code>
+        </p>
+        <h5>Response</h5>
+        <p>
+          Upon success, the body will contain the status of the pairing (as specified above) in the desired format.  Note: An option to include a callback parameter to be notified of request completion will be available soon.
+        </p>
+
+        <div class="code-gutter">
+          <h4 id="auth_status_example_json">Authentication Status Response Example</h4>
+
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#json" data-toggle="tab">JSON</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="json">
+              <script src="https://gist.github.com/smholloway/bc5262039324db7da8a9.js"></script>
+            </div>
+          </div><!-- .tab-content -->
+        </div><!-- .code-gutter -->
+
+        <hr>
+
+        <h3>Errors</h3>
+        <p>Errors are possible. Errors will have an HTTP status code of 400 or greater; each response should have a JSON object with an <code>error_code</code> and <code>error_message</code>.</p>
+
+        <table class="table docs-table">
+          <tr>
+            <td><strong>400 - Bad Request</strong></td>
+            <td>You may receive a 400 if we cannot understand the input to the pairing function.</td>
+          </tr>
+          <tr>
+            <td><strong>401 - Unauthorized</strong></td>
+            <td>You may receive a 401 due to OAuth errors.</td>
+          </tr>
+          <tr>
+            <td><strong>403 - Forbidden</strong></td>
+            <td>You may receive a 403 when accessing a resource that does not belong to you.</td>
+          </tr>
+          <tr>
+            <td><strong>404 - Not Found</strong></td>
+            <td>You may receive a 404 if the input ID does not exist.</td>
+          </tr>
+        </table>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <section class="docs-where-next-container">
+              <h4>Next Up</h4>
+              <p>Once you have authenticating &amp; pairing setup, you will want to provide a way for users to recover their account if they lose their device.</p>
+              <p><a href="../../demo-to-real-world/index.html" class="btn btn-round btn-default btn-outline">Demo to Real World &raquo;</a></p>
+            </section>
+          </div><!-- .col-xs-6 -->
+        </div><!-- .row -->
+      </div><!-- .col-xs-9 #main-content -->
+    </div><!-- .row -->
+  </div><!-- .container-fluid -->
+
+
+
+            
+
+            
+    
+
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-links">
+            <div class="col-xs-12 col-md-4">
+                <a href="https://www.toopher.com/" class="toopher-footer-logo">
+                    <img src="../../../site_media/static/img/sf-toopher-transparent/index.png" width="220" alt="Toopher" />
+                </a>
+                <p class="toopher-short-description">Toopher prevents online fraud using your mobile device to automatically verify you are where your identity is being used.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <p><small class="text-muted copyright">&copy; 2011 - 2014 Toopher Inc.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div><!-- .snap-content -->
+
+        
+        	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+            <script type="text/javascript" src="../../../site_media/static/dist/js/lib/index.js"></script>
+        	<script type="text/javascript" src="../../../site_media/static/dist/js/app/index.js"></script>
+
+        	
+        
+    </body>
+
+<!-- Mirrored from dev.toopher.com/docs/api/authenticating by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:03:17 GMT -->
+</html>

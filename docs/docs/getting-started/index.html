@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US en-us" class="no-js"><!--<![endif]-->
+	
+<!-- Mirrored from dev.toopher.com/docs/getting-started by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:02:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+        <title>Getting Started - Toopher API Documentation - Toopher</title>
+
+        
+
+        <link rel="shortcut icon" href="../../site_media/static/dist/img/favicon/index.ico?v=2">
+
+        
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,800,700" rel="stylesheet" type="text/css">
+
+            <!-- sass compiled stylesheet -->
+            <link href="../../site_media/static/dist/stylesheets/styles.min/index.css" type="text/css" rel="stylesheet">
+
+            
+        
+
+        
+        	<script type="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26481705-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+
+        
+    </head>
+
+    <body class="fixed-page" id="">
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-54MWG4"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54MWG4');</script>
+      <!-- End Google Tag Manager -->
+
+    	
+             <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-right scrollable">
+        <div>
+            <a href="#" id="close-right-nav" class="close-nav"><i class="icon icon-delete"></i></a>
+            <ul class="nav main-nav nav-stacked">
+            </ul>
+            <div class="nav-apps-section">
+                <h5>OUR APPS</h5>
+                <ul class="list-inline list-unstyled nav-app-list">
+                    <li><a href="https://itunes.apple.com/us/app/toopher/id562592093?mt=8&amp;uo=4" 
+       target="itunes_store"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="http://play.google.com/store/apps/details?id=com.toopher.android"><i class="fa fa-android"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+        <div id="content" class="snap-content" data-snap-ignore="true">
+        	
+    <header class="navbar toopher-docs-nav navbar-default navbar-docs navbar-static-top" role="banner">
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-xs-12">
+		        <a href="https://www.toopher.com/">
+		            <img class="toopher-nav-logo" src="../../site_media/static/img/sf-toopher-transparent/index.png" alt="Salesforce + Toopher" width="220" />
+		        </a>
+		        <nav class="navbar-right" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+</nav>
+		    </div>
+        </div>
+    </div>
+</header>
+
+
+        	
+                <noscript>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning">
+                                <a class="close" data-dismiss="alert">&times;</a>
+                                Please enable JavaScript to experience all the sweet features we lovingly built for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </noscript>
+
+                
+  <div class="container-fluid content-frame">
+    <div class="row">
+
+        
+
+<div class="col-xs-3">
+    <div class="sidebar-menu-wrapper">
+        <nav class="sidebar-section sidebar-menu">
+            <h4 class="sidebar-menu-title">Documentation</h4>
+            <ul class="nav nav-stacked">
+                <li class="active"><a href="index.html">Getting Started Guide</a></li>
+                <li class=""><a href="../api/pairing/index.html">Pairing</a></li>
+                <li class=""><a href="../api/authenticating/index.html">Authenticating</a></li>
+                <li class=""><a href="../demo-to-real-world/index.html">Demo to Real World</a></li>
+                <li class=""><a href="../api/account-recovery/index.html">Account Recovery</a></li>
+                <li class=""><a href="../testing/index.html">Testing</a></li>
+                <li class=""><a href="../examples/index.html">Examples</a></li>
+                <li class=""><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="mailto:support@toopher.com">Contact Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+        <div class="col-xs-9 main-content" role="main">
+          <div class="row">
+            <div class="col-xs-12">
+
+              <div class="page-header">
+                <h1 class="page-title">Getting Started</h1>
+                <p class="lead">Getting started with Toopher is easy! After signing up for a Toopher account, you can create a new requester (a key and secret). Your key and secret are unique and are used to sign your requests. Most people only need one requester.</p>
+              </div>
+
+              <h4>Download your favorite language library</h4>
+              <p>We have <a href="https://github.com/toopher">Toopher language libraries</a> for most popular web languages:</p><br/>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-java">
+                        <img src="../../site_media/static/img/language-libs-logos/java-logo/index.png" alt="Toopher Java  library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-dotnet">
+                        <img src="../../site_media/static/img/language-libs-logos/dotnet-logo/index.png" alt="Toopher .NET library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-python">
+                        <img src="../../site_media/static/img/language-libs-logos/python-logo/index.png" alt="Toopher Python library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-php">
+                        <img src="../../site_media/static/img/language-libs-logos/php-logo/index.png" alt="Toopher PHP library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-ruby">
+                        <img src="../../site_media/static/img/language-libs-logos/ruby-logo/index.png" alt="Toopher Ruby library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="thumbnail">
+                      <a href="https://github.com/toopher/toopher-perl">
+                        <img src="../../site_media/static/img/language-libs-logos/perl-logo/index.png" alt="Toopher Perl library" class="img-responsive" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <section class="docs-where-next-container">
+                    <h4>Next Up</h4>
+                    <p>Once you have signed up for a Toopher account and downloaded a Toopher library, you will want to setup pairing.</p>
+                    <p><a href="../api/pairing/index.html" class="btn btn-round btn-default btn-outline">Pairing &raquo;</a></p>
+                  </section>
+                </div><!-- .col-xs-6 -->
+              </div><!-- .row -->
+            </div><!-- .col-xs-12 -->
+          </div><!-- .row -->
+      </div><!-- .col-xs-10 #main-content -->
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+
+
+
+            
+
+            
+    
+
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-links">
+            <div class="col-xs-12 col-md-4">
+                <a href="https://www.toopher.com/" class="toopher-footer-logo">
+                    <img src="../../site_media/static/img/sf-toopher-transparent/index.png" width="220" alt="Toopher" />
+                </a>
+                <p class="toopher-short-description">Toopher prevents online fraud using your mobile device to automatically verify you are where your identity is being used.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <p><small class="text-muted copyright">&copy; 2011 - 2014 Toopher Inc.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div><!-- .snap-content -->
+
+        
+        	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+            <script type="text/javascript" src="../../site_media/static/dist/js/lib/index.js"></script>
+        	<script type="text/javascript" src="../../site_media/static/dist/js/app/index.js"></script>
+
+        	
+        
+    </body>
+
+<!-- Mirrored from dev.toopher.com/docs/getting-started by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Mar 2020 22:02:58 GMT -->
+</html>
